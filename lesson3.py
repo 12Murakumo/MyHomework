@@ -5,7 +5,7 @@ try:
     value_1 = float(input("Введите первое число: "))
     value_2 = float(input("Введите второе число: "))
 
-    operation = input("Выберите одну из опираций: ('+', '-', '*', '/')\n")
+    operation = input("Выберите одну из операций: ('+', '-', '*', '/')\n")
     if operation == '+':
         result = value_1 + value_2
         print('Ответ: ')
