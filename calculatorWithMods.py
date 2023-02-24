@@ -5,13 +5,16 @@ init()
 result = 0
 while True:
     try:
+        print(Fore.YELLOW)
         expr = input("Введите математическое выражение: ")
         result = numexpr.evaluate(expr)
-        print(Fore.YELLOW)
+        print(Fore.GREEN)
         print(f"Результат: {result}")
     except:
+        print(Fore.RED)
         print("Ошибка ввода данных")
-    flag = input("Желаете продолжить? да, нет")
+        print(Fore.RED)
+    flag = input("Желаете продолжить? да, нет: ")
     if not flag == "да":
         quit("Bye")
 
