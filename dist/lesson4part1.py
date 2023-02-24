@@ -27,9 +27,10 @@
 
 # 5)
 
-# my_str = "warframe"
-# index = 5
-# if len(my_str) < index:
-# print((my_str)[::-1]+my_str)
-# else:
-# print(my_str)
+my_str = "warframe"
+index = 5
+if len(my_str) < index:
+    print((my_str)[::-1]+my_str)
+else:
+    print(my_str)
+
