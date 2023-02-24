@@ -7,9 +7,12 @@ while True:
     try:
         expr = input("Введите математическое выражение: ")
         result = numexpr.evaluate(expr)
+        print(Fore.YELLOW)
+        print(f"Результат: {result}")
     except:
-        quit("Ошибка ввода данных")
+        print("Ошибка ввода данных")
+    flag = input("Желаете продолжить? да, нет")
+    if not flag == "да":
+        quit("Bye")
 
-    print(Fore.YELLOW)
-    print(f"Результат: {result}")
-    #Просто через While True, без break и тд., потому что калькулятору и так будет нормально работать в приложении
+
