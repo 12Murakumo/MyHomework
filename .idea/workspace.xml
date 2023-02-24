@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f9106096-66f8-4c08-9145-2259954d8702" name="Changes" comment="123">
-      <change beforePath="$PROJECT_DIR$/dist/dopternal.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lesson3.py" beforeDir="false" afterPath="$PROJECT_DIR$/lesson4part2.py" afterDir="false" />
-    </list>
+    <list default="true" id="f9106096-66f8-4c08-9145-2259954d8702" name="Changes" comment="123" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -130,7 +127,28 @@
       <option name="project" value="LOCAL" />
       <updated>1677262369188</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="123">
+      <created>1677262441903</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1677262441903</updated>
+    </task>
+    <task id="LOCAL-00014" summary="1231">
+      <created>1677262468143</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1677262468143</updated>
+    </task>
+    <task id="LOCAL-00015" summary="123">
+      <created>1677262807946</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1677262807946</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -145,6 +163,7 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
+    <MESSAGE value="1231" />
     <MESSAGE value="123" />
     <option name="LAST_COMMIT_MESSAGE" value="123" />
   </component>
