@@ -1,7 +1,7 @@
 # 1)
 
-# value = 10
-# new_value = 5 if value < 100 else 10
+# value = 40
+# new_value = value / 2 if value < 100 else -value
 # print(new_value)
 
 # 2)
@@ -18,18 +18,12 @@
 
 # 4)
 
-# my_str = "mybrainisblowingup"
+# my_str = "ihopeitsbetternow"
 # index = 5
-# if len(my_str) < index:
-# print(my_str * 2)
-# else:
-# print(my_str)
+# print(my_str * 2) if len(my_str) < index else print(my_str)
 
 # 5)
 
-my_str = "warframe"
-index = 5
-if len(my_str) < index:
-    print(my_str[::-1]+my_str)
-else:
-    print(my_str)
+# my_str = "warframe"
+# index = 5
+# print(my_str[::-1]+my_str) if len(my_str) < index else print(my_str)
