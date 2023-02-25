@@ -7,10 +7,8 @@ def convert():
 
         if operation == '+':
             result = value_1 + value_2
-
         elif operation == '-':
             result = value_1 - value_2
-
         elif operation == '*':
             result = value_1 * value_2
         elif operation == '/':
