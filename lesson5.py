@@ -68,8 +68,8 @@
 
 # 11)
 
-my_str = "hhhhhhh"
-my_str.find("h")+1
-my_str.rfind("h")+1
-my_str.upper()
-print(my_str)
+value1 = "hHHHh"
+value1.swapcase()
+print(value1)
+
+#### Сдаюсь! Я потратил два дня чтобы разобраться, не понимаю как оно должно работать.
