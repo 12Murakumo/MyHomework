@@ -68,8 +68,10 @@
 
 # 11)
 
-value1 = "hHHHh"
-value1.swapcase()
+value1 = "hhhhh"
+value1.find("h", 0)
+value1.rfind("h", -1)
+value1.replace("h", "H")
 print(value1)
 
 #### Сдаюсь! Я потратил два дня чтобы разобраться, не понимаю как оно должно работать.
