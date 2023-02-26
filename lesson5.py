@@ -43,17 +43,24 @@
 # my_str = "python12"
 # print(len(my_str))
 
+# 2)
+
+# my_str = "Trying to learn"
+# my_str = (my_str.count(' ')+1)
+# print(my_str)
+
+
+
 # 3)
 
-count = 0
-for letter in 'Sschsch, kkch!':
-    if (letter == 'ch'):
-        count += 1
-print(count)
+# s = "csssd Goch!"
+# index = s.find("ch")
+# print(index)
 
 
 
 # 11)
-# my_str = "HoshGGGsiihhoH"
-# my_str = my_str.replace("h", "H")[1:-1]
-# print(my_str)
+
+my_str = "hhhhh"
+my_str = my_str.replace("h", "H")
+print(my_str)
