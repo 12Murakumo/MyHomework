@@ -53,14 +53,23 @@
 
 # 3)
 
-# s = "csssd Goch!"
-# index = s.find("ch")
-# print(index)
+# my_string = "Ohnchoch Gochs"
+# start = -1
+# count = 0
 
+# while True:
+#   start = my_string.find("ch", start+1)
+#   if start == -1:
+#       break
+#   count += 1
+
+# print(count)
 
 
 # 11)
 
-my_str = "hhhhh"
-my_str = my_str.replace("h", "H")
+my_str = "hhnchoh"
+my_str.find("h")+1
+my_str.rfind("h")+1
+
 print(my_str)
