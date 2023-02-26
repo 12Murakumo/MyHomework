@@ -68,8 +68,8 @@
 
 # 11)
 
-my_str = "hhnchoh"
+my_str = "hhhhhhh"
 my_str.find("h")+1
 my_str.rfind("h")+1
-
+my_str.upper()
 print(my_str)
