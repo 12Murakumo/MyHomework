@@ -68,10 +68,17 @@
 
 # 11)
 
-value1 = "hhhhh"
-value1.find("h", 0)
-value1.rfind("h", -1)
-value1.replace("h", "H")
-print(value1)
+#value1 = "hhhhh"
+#value1.find("h")
+#value1.rfind("h")
+#value1.replace("h", "H")
+#print(value1)
 
-#### Сдаюсь! Я потратил два дня чтобы разобраться, не понимаю как оно должно работать.
+
+new_str = "hhhhhh"
+first = new_str.find('h')
+last = new_str.rfind('h')
+my_str = new_str[0:first+1] + new_str[first+1:last].replace('h', 'H') + new_str[last:]
+print(my_str)
+
+
