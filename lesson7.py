@@ -128,7 +128,7 @@ for symbol in my_str1.lower():
             if symbol1 not in new_str:
                 new_str.append(symbol1)
 
-result = new_str.intersection(new_str)
+result = new_str.intersection(my_str1, my_str2)
 
 
 
