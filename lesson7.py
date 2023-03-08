@@ -70,6 +70,8 @@
 #     if my_list[i] > my_list[i - 1] + my_list[i + 1]:
 #         count += 1
 #         new_list.append(my_list[i])
+#         if count != 0:
+#             new_list.append(my_list[i])
 #
 # print(new_list)
 
@@ -118,18 +120,30 @@
 
 # 11) #####Not working as i want
 
-my_str1 = "aaaasdf1"
-my_str2 = "asdfff2"
-new_str = []
+my_str1 = "sssskp1dd"
+my_str2 = "ookp2zsssz"
+count = 0
+new_str1 = []
+new_str2 = []
 for symbol in my_str1:
-        if symbol not in new_str:
-            new_str.append(symbol)
-        for symbol1 in my_str2:
-            if symbol1 not in new_str:
-                new_str.append(symbol1)
-s = (set(new_str))
-a = s.intersection(my_str1, my_str2)
-print(a)
+    if symbol not in new_str1:
+        new_str1.append(symbol)
+        count = 1
+    for symbol1 in my_str2:
+        if symbol1 not in new_str2:
+            new_str2.append(symbol1)
+            count = 1
+
+val_set_1 = set(new_str1)
+val_set_2 = set(new_str2)
+result = val_set_1.intersection(val_set_2)
+print(result)
+
+
+
+# s = (set(new_str))
+# a = s.intersection(my_str1, my_str2)
+# print(a)
 
 
 
