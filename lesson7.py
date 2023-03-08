@@ -61,7 +61,7 @@
 #
 # print(sum(numbers))
 
-# 7) ###########Now working
+# 7) #############
 
 # my_list = [2, 4, 1, 5, 3, 7]
 # count = 0
@@ -69,14 +69,7 @@
 # for i in my_list:
 #     if my_list[i] > my_list[i - 1] + my_list[i + 1]:
 #         count += 1
-#         new_list.append(count)
-# for i in list(my_list):
-#     if my_list[1:] > sum():
-#         if my_list[3:] > my_list[2:] + my_list[:4]:
-#             count += str(i)
-#             new_list.append(count)
-
-
+#         new_list.append(my_list[i])
 #
 # print(new_list)
 
@@ -125,11 +118,18 @@
 
 # 11) #####Not working as i want
 
-# my_str1 = "aaaasdf1"
-# new_str = []
-# for i in my_str1.lower():
-#     if my_str1.count(i) == 1:
-#         new_str.append(i)
-# print(new_str)
+my_str1 = "aaaasdf1"
+my_str2 = "asdfff2"
+new_str = []
+for symbol in my_str1.lower():
+        if symbol not in new_str:
+            new_str.append(symbol)
+        for symbol1 in my_str2.lower():
+            if symbol1 not in new_str:
+                new_str.append(symbol1)
+
+result = new_str.intersection(new_str)
+
+
 
 
