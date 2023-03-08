@@ -121,14 +121,15 @@
 my_str1 = "aaaasdf1"
 my_str2 = "asdfff2"
 new_str = []
-for symbol in my_str1.lower():
+for symbol in my_str1:
         if symbol not in new_str:
             new_str.append(symbol)
-        for symbol1 in my_str2.lower():
+        for symbol1 in my_str2:
             if symbol1 not in new_str:
                 new_str.append(symbol1)
-
-result = new_str.intersection(my_str1, my_str2)
+s = (set(new_str))
+a = s.intersection(my_str1, my_str2)
+print(a)
 
 
 
