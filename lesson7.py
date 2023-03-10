@@ -61,19 +61,22 @@
 #
 # print(sum(numbers))
 
-# 7) #############
+# 7)
 
-# my_list = [2, 4, 1, 5, 3, 7]
-# count = 0
+# my_list = [2, 4, 1, 5, 3, 7, 2, 1]
+# # пустой список (list), сюда будут вкладываться элементы полученные циклом for
 # new_list = []
-# for i in my_list:
+# # Начало цикла, обьявление условия, определение границ для работы цикла
+# for i in range(1, len(my_list) - 1):
+#     # первое условие: Если значение my_list[i] больше суммы его соседей (my_list[i -1] + my_list[i -1])
 #     if my_list[i] > my_list[i - 1] + my_list[i + 1]:
-#         count += 1
+#         # То добавляем через метод append это значение в пустой список new_list
 #         new_list.append(my_list[i])
-#         if count != 0:
-#             new_list.append(my_list[i])
 #
-# print(new_list)
+# # Выписываем результат, а именно те символы что были помещены в new_list через .append. А чтобы получить их количество
+# # запрашиваемое условием задачи - принтим его как перечень с использованием len. В таком случае вывод на экране будет не
+# # [4, 5, 7], а 3, что и есть верно
+# print(len(new_list))
 
 # 8)
 
@@ -118,33 +121,30 @@
 #
 # print(new_str)
 
-# 11) #####Not working as i want
-
-my_str1 = "sssskp1dd"
-my_str2 = "ookp2zsssz"
-count = 0
-new_str1 = []
-new_str2 = []
-for symbol in my_str1:
-    if symbol not in new_str1:
-        new_str1.append(symbol)
-        count = 1
-    for symbol1 in my_str2:
-        if symbol1 not in new_str2:
-            new_str2.append(symbol1)
-            count = 1
-
-val_set_1 = set(new_str1)
-val_set_2 = set(new_str2)
-result = val_set_1.intersection(val_set_2)
-print(result)
-
-
-
-# s = (set(new_str))
-# a = s.intersection(my_str1, my_str2)
-# print(a)
-
-
+# 11)
+#
+# my_str1 = "aaaasdf1"
+# my_str2 = "asdfff2"
+#   # два пустых списка (list), в которые будут помещаться найденые элементы в цикле
+# new_str1 = []
+# new_str2 = []
+# for symbol in my_str1:
+#     # С помощью метода str.count ищем количество вхождений подстроки в строке. Конкретный символ не указан, но задано
+#     # количество допустимых вхождений " == 1 ", а значит цикл будет искать уникальный символ, который встречается лишь
+#     # единожды в указанной строке
+#     if my_str1.count(symbol) == 1:
+#         new_str1.append(symbol)
+#     for symbol1 in my_str2:
+#         # Ту же операцию совершаем для my_str2
+#         if my_str2.count(symbol1) == 1:
+#             new_str2.append(symbol1)
+#
+# # Теперь нужно обьеденить два списка new_str1 и new_str2 в которые помещены результаты из строк my_str1 и my_str2.
+# # обозначаем новые переменные, с значением new_str1 и new_str2, но переведенные в set, для работы метода intersection
+# # Этим методом находим и оставляем только уникальные символы в строке, которые встречаются в обеих строках
+# val_set_1 = set(new_str1)
+# val_set_2 = set(new_str2)
+# result = val_set_1.intersection(val_set_2)
+# print(result)
 
 

@@ -106,3 +106,10 @@
 #                 new_str.append(symbol1)
 #
 # print(new_str)
+
+
+
+# my_list = [2, 4, 1, 5, 3, 7]
+# count = 0
+# new_list = [my_list[i] for i in range(1, len(my_list) - 1) if my_list[i] > my_list[i - 1] + my_list[i + 1]]
+# print(new_list)
