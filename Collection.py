@@ -113,3 +113,20 @@
 # count = 0
 # new_list = [my_list[i] for i in range(1, len(my_list) - 1) if my_list[i] > my_list[i - 1] + my_list[i + 1]]
 # print(new_list)
+
+# Вывести все слова с первой буквой "а"
+#
+# my_list = ['afa', 'fla', 'mle', 'to', 'all']
+# print(*filter(lambda x: x.startswith('a'), my_list))
+
+
+# Словарь, попытка вывести имя самого молодого
+# min_age_person = []
+#
+# for i in person:
+#     if i.items not in min_age_person:
+#         min_age_person.append(i.items())
+#     else:
+#         min_age_person.append(i.items())
+# x = min_age_person
+# print(min(x))
