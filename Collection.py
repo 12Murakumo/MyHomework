@@ -130,3 +130,41 @@
 #         min_age_person.append(i.items())
 # x = min_age_person
 # print(min(x))
+
+# Cловарь. самое длинное имя (не работает)
+# person = [{
+#     "first_name": "Yasuo",
+#     "age": "35",
+#     "adress": "Ionia",
+#     },
+#     {"first_name": "Riven",
+#      "age": "25",
+#      "adress": "Noxus",
+#      },
+#     {
+#         "first_name": "Rud",
+#         "age": "25",
+#         "adress": "league",
+#     },
+#     {
+#         "first_name": "Puto",
+#         "age": "19",
+#         "adress": "league",
+#
+#     },
+#     {
+#         "first_name": "Axe",
+#         "age": "34",
+#         "adress": "Riot",
+#     }]
+#
+# person_name_list = []
+# # for key, value in {person.items()}:
+# #     print(key, value)
+# for i in person:
+#     if i["first_name"] not in person_name_list:
+#         person_name_list.append(i["first_name"])
+#     else:
+#         person_name_list.append(i["first_name"])
+# print(max(person_name_list))
+

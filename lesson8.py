@@ -75,41 +75,87 @@
 #         min_age_person.append(i["age"])
 # print(min(min_age_person))
 
-# 4, b)
 
-person = [{
-    "first_name": "Yasuo",
-    "age": "35",
-    "adress": "Ionia",
-    },
-    {"first_name": "Riven",
-     "age": "25",
-     "adress": "Noxus",
-     },
-    {
-        "first_name": "Rud",
-        "age": "25",
-        "adress": "league",
-    },
-    {
-        "first_name": "Puto",
-        "age": "19",
-        "adress": "league",
+# 4, б)
+# people = [{"name": "John", "age": 15},
+#           {"name": "Jane", "age": 27},
+#           {"name": "Jack", "age": 45},
+#           {"name": "James", "age": 32},
+#           {"name": "Judy", "age": 19},
+#           {"name": "Jake", "age": 52}]
+#
+# longest_names = []
+# max_length = 0
+#
+# for person in people:
+#     name_length = len(person["name"])
+#     if name_length > max_length:
+#         longest_names = [person["name"]]
+#         max_length = name_length
+#     elif name_length == max_length:
+#         longest_names.append(person["name"])
+#
+# print(longest_names)
 
-    },
-    {
-        "first_name": "Axe",
-        "age": "34",
-        "adress": "Riot",
-    }]
+# 4, в)
+#
+# people = [{"name": "John", "age": 15},
+#           {"name": "Jane", "age": 27},
+#           {"name": "Jack", "age": 45},
+#           {"name": "James", "age": 32},
+#           {"name": "Judy", "age": 19},
+#           {"name": "Jake", "age": 52}]
+#
+# total_age = 0
+# num_people = len(people)
+#
+# for person in people:
+#     total_age += person["age"]
+#
+# average_age = total_age / num_people
+#
+# print(average_age)
 
-person_name_list = []
-# for key, value in {person.items()}:
-#     print(key, value)
-for i in person:
-    if i["first_name"] not in person_name_list:
-        person_name_list.append(i["first_name"])
-    else:
-        person_name_list.append(i["first_name"])
-print(max(person_name_list))
+# 5,а
 
+# my_dict_1 = {'a': 1, 'b': 2, 'c': 3}
+# my_dict_2 = {'b': 4, 'c': 5, 'd': 6}
+# keys_1 = set(my_dict_1.keys())
+# keys_2 = set(my_dict_2.keys())
+#
+# common_keys = list(keys_1 & keys_2)
+# print(common_keys)
+
+# 5,б
+
+# my_dict_1 = {'a': 1, 'b': 2, 'c': 3}
+# my_dict_2 = {'b': 4, 'c': 5, 'd': 6}
+# keys_1 = set(my_dict_1.keys())
+# keys_2 = set(my_dict_2.keys())
+#
+# unique_keys = list(keys_1 - keys_2)
+# print(unique_keys)
+
+# 5, в
+
+# my_dict_1 = {'a': 1, 'b': 2, 'c': 3}
+# my_dict_2 = {'b': 4, 'c': 5, 'd': 6}
+# unique_keys = set(my_dict_1.keys()) - set(my_dict_2.keys())
+# new_dict = {key: my_dict_1[key] for key in unique_keys}
+# print(new_dict)
+
+# 5, г
+
+# my_dict_1 = {'a': 1, 'b': 2, 'c': 3}
+# my_dict_2 = {'b': 4, 'c': 5, 'd': 6}
+# new_dict = {}  # створюємо пустий словник
+#
+# for key in set(my_dict_1.keys()) | set(my_dict_2.keys()):  # об'єднуємо ключі з двох словників
+#     if key in my_dict_1 and key not in my_dict_2:  # якщо ключ є тільки в першому словнику
+#         new_dict[key] = my_dict_1[key]
+#     elif key in my_dict_2 and key not in my_dict_1:  # якщо ключ є тільки в другому словнику
+#         new_dict[key] = my_dict_2[key]
+#     else:  # якщо ключ є в обох словниках
+#         new_dict[key] = [my_dict_1[key], my_dict_2[key]]
+#
+# print(new_dict)
