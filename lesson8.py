@@ -104,12 +104,12 @@ person = [{
     }]
 
 person_name_list = []
-for key, value in {person.items()}:
-    print(key, value)
-# for i in person:
-#     if i["first_name"] not in person_name_list:
-#         person_name_list.append(i["first_name"])
-#     else:
-#         break
-# print(max(person_name_list))
+# for key, value in {person.items()}:
+#     print(key, value)
+for i in person:
+    if i["first_name"] not in person_name_list:
+        person_name_list.append(i["first_name"])
+    else:
+        person_name_list.append(i["first_name"])
+print(max(person_name_list))
 
