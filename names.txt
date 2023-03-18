@@ -1,0 +1,4 @@
+1	Smith	USA	1
+2	Johnson	USA	2
+3	Williams	USA	3
+
