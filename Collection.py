@@ -168,3 +168,18 @@
 #         person_name_list.append(i["first_name"])
 # print(max(person_name_list))
 
+def correct_sentence(text: str) -> str:
+    if not text.endswith('.'):
+        text += '.'
+    return text.capitalize()
+
+
+print(correct_sentence("greetings, friends"))  # "Greetings, friends."
+
+assert correct_sentence("greetings, friends") == "Greetings, friends."
+assert correct_sentence("Greetings, friends") == "Greetings, friends."
+assert correct_sentence("Greetings, friends.") == "Greetings, friends."
+assert correct_sentence("greetings, friends.") == "Greetings, friends."
+
+
+
