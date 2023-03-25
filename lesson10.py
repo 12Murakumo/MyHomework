@@ -70,37 +70,44 @@
 
 # 4)
 
-# import re
-# import os
-# from datetime import datetime
-#
-# def read_dates(filename):
-#     dates = []
-#
-#     with open(filename, "r") as file:
-#         for line in file:
-#             data = line.split(",")
-#             date_original = data[1].strip()
-#
-#             # Видаляємо порядкові суфікси
-#             date_clean = re.sub(r'(\d)(st|nd|rd|th)', r'\1', date_original)
-#
-#             date_obj = datetime.strptime(date_clean, "%d %B %Y")  # конвертуємо в формат datetime
-#             date_modified = date_obj.strftime("%d/%m/%Y")  # конвертуємо в новий формат
-#
-#             dates.append({"date_original": date_original, "date_modified": date_modified})
-#
-#     return dates
-#
-# # Тестові дані
-# filename = "authors.txt"
-#
-# # Виклик функції
-# dates_list = read_dates(filename)
-#
-# # Вивід результату
-# for date_dict in dates_list:
-#     print(date_dict)
+import re
+import os
+from datetime import datetime
+
+def read_dates(filename):
+    dates = []
+
+    with open(filename, "r") as file:
+        for line in file:
+            # Используйте регулярное выражение для извлечения даты
+            date_match = re.search(r'(\d+)(?:st|nd|rd|th)? (\w+) (\d+)', line)
+
+            # Если дата найдена, обработайте ее
+            if date_match:
+                date_original = date_match.group(0)
+                date_clean = re.sub(r'(\d)(st|nd|rd|th)', r'\1', date_original)
+
+                try:  # попытка обработать дату
+                    date_obj = datetime.strptime(date_clean, "%d %B %Y")  # конвертуємо в формат datetime
+                    date_modified = date_obj.strftime("%d/%m/%Y")  # конвертуємо в новий формат
+                    dates.append({"date_original": date_original, "date_modified": date_modified})
+                except ValueError:  # если возникла ошибка при разборе даты
+                    continue  # пропустите эту строку
+
+    return dates
+
+
+
+
+# Тестові дані
+filename = "authors.txt"
+
+# Виклик функції
+dates_list = read_dates(filename)
+
+# Вивід результату
+for date_dict in dates_list:
+    print(date_dict)
 
 
 

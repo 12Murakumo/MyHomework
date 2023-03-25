@@ -6,7 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="f9106096-66f8-4c08-9145-2259954d8702" name="Changes" comment="123">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Collection.py" beforeDir="false" afterPath="$PROJECT_DIR$/Collection.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/authors.txt" beforeDir="false" afterPath="$PROJECT_DIR$/authors.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lesson10.py" beforeDir="false" afterPath="$PROJECT_DIR$/lesson10.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,7 +44,7 @@
       <recent name="C:\Python\MyHomework" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.Collection">
+  <component name="RunManager" selected="Python.lesson10">
     <configuration name="Collection" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="MyHomework" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -151,9 +152,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.lesson10" />
         <item itemvalue="Python.Collection" />
         <item itemvalue="Python.lesson7 (1)" />
-        <item itemvalue="Python.lesson10" />
         <item itemvalue="Python.lesson9" />
         <item itemvalue="Python.lesson8" />
       </list>
@@ -469,7 +470,14 @@
       <option name="project" value="LOCAL" />
       <updated>1679143624893</updated>
     </task>
-    <option name="localTasksCounter" value="44" />
+    <task id="LOCAL-00044" summary="123">
+      <created>1679677165970</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1679677165970</updated>
+    </task>
+    <option name="localTasksCounter" value="45" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
