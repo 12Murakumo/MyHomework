@@ -83,7 +83,7 @@ def read_dates(filename):
 
             if date_match:
                 date_original = date_match.group(0)
-                day = date_match.group(1) or '1'  # если число не указано, используйте 1
+                day = date_match.group(1) or '1'  # Если число не указано, используйте 1
                 month = date_match.group(2)
                 year = date_match.group(3)
             else:
