@@ -79,22 +79,36 @@ def read_dates(filename):
 
     with open(filename, "r") as file:
         for line in file:
-            # Используйте регулярное выражение для извлечения даты
-            date_match = re.search(r'(\d+)(?:st|nd|rd|th)? (\w+) (\d+)', line)
+            date_match = re.search(r'(\d+)?(?:st|nd|rd|th)? (\w+) (\d+)', line)
 
-            # Если дата найдена, обработайте ее
             if date_match:
                 date_original = date_match.group(0)
-                date_clean = re.sub(r'(\d)(st|nd|rd|th)', r'\1', date_original)
+                day = date_match.group(1) or '1'  # если число не указано, используйте 1
+                month = date_match.group(2)
+                year = date_match.group(3)
+            else:
+                # Регулярное выражение для обработки строк только с месяцем и годом
+                month_year_match = re.search(r'(\w+) (\d+)', line)
+                if month_year_match:
+                    date_original = month_year_match.group(0)
+                    day = '1'  # используйте 1, если число не указано
+                    month = month_year_match.group(1)
+                    year = month_year_match.group(2)
+                else:
+                    continue
 
-                try:  # попытка обработать дату
-                    date_obj = datetime.strptime(date_clean, "%d %B %Y")  # конвертуємо в формат datetime
-                    date_modified = date_obj.strftime("%d/%m/%Y")  # конвертуємо в новий формат
-                    dates.append({"date_original": date_original, "date_modified": date_modified})
-                except ValueError:  # если возникла ошибка при разборе даты
-                    continue  # пропустите эту строку
+            date_clean = f'{day} {month} {year}'
+
+            try:  # попытка обработать дату
+                date_obj = datetime.strptime(date_clean, "%d %B %Y")  # конвертуємо в формат datetime
+                date_modified = date_obj.strftime("%d/%m/%Y")  # конвертуємо в новий формат
+                dates.append({"date_original": date_original, "date_modified": date_modified})
+            except ValueError:  # если возникла ошибка при разборе даты
+                continue  # пропустите эту строку
 
     return dates
+
+
 
 
 
